@@ -1,0 +1,432 @@
+/******* main css here *******/
+@import '../index.scss';
+
+.freedom_event_section {
+  background: $light_red_bg;
+  color: $white;
+  .mybar {
+      padding: 0px 50px;
+      .freedom_rise_text {
+        width: 28%;  
+        display: inline-block;
+        vertical-align: middle;
+        h2{
+          font-family: 'Roboto Slab', serif;
+          font-weight: 700;
+          color: $white;
+          font-size: 16px;
+          text-transform: uppercase;
+        }   
+      }
+      .countdown_timer {
+          width: 26%;
+          display: inline-block;
+          vertical-align: middle;
+          text-align: center;
+          background: $dark_red_bg;
+          min-height: 65px;
+          font-family: 'Roboto Slab', serif;
+          font-weight: 700;
+          font-size: 30px;
+          #countdown {
+            height: 65px;
+            line-height: 65px;
+        }
+      }
+      .raised_goal{
+          display: inline-block;
+          vertical-align: middle;
+          width: 25%;
+          p {
+            margin: 0;
+            padding: 0px 30px;
+            font-size: 15px;
+        }
+      }
+      .view_campaigns{
+          display: inline-block;
+          vertical-align: middle;
+          width: 20%;
+          a{
+            border-radius: 20px;
+            background: $white;
+            border: none;
+            padding: 10px 20px;
+            font-weight: 900;
+            font-size: 13px;
+            color: $red_light;
+          }
+      }
+  }
+}
+
+
+.hero_image {
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  h1 {
+    font-family: $Roboto-slab;
+    font-weight: 400;
+    font-size: 48px;
+    color: $white;
+    margin-top: 25px;
+  }
+  p {
+    font-family: $Roboto-slab;
+    font-weight: 300;
+    font-size: 20px;
+    color: $white;
+  }
+}
+
+.videobox {
+  background: #dbf7fe;
+  padding: 30px 0px;
+  .video_box_header{
+    .heading_tag_left{
+      padding-right: 80px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 0px;
+      color: $white;
+      font-family: $Roboto;
+      font-weight: 900;
+      font-size: 24px;
+      height: 55px;
+      line-height: 50px;
+    }
+    .heading_tag_right{
+      padding-left: 80px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 0px;
+      color: $white;
+      font-family: $Roboto;
+      font-weight: 900;
+      font-size: 24px;
+      height: 55px;
+      line-height: 50px;
+    }
+  }
+  .video_iframe{ 
+      padding: 0px 40px;
+      margin-top: 50px;
+      iframe.border_frame {
+      border: 3px solid $white;
+    }
+  }
+}
+
+.testimonial {
+  background: #e4f9ff;
+  padding: 30px 0px;
+  #quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+    text-align: center;
+    p{
+      position: relative;
+      font-size: 19px;
+      font-family: $Roboto-slab;
+      font-weight: 300;
+      padding: 60px 75px 15px;
+      img.left_quote {
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0.1;
+        max-width: 123px;
+      }
+      img.right_quote {
+        position: absolute;
+        right: 0;
+        bottom: -25px;
+        opacity: 0.1;
+        max-width: 123px;
+      }
+      span{
+        font-family: $Roboto-slab;
+        font-weight: 400;
+        font-size: 19px;
+        color: $dark_grey;
+        &.testimonial_price{
+          color: $light_blue;
+          font-size: 26px;
+          font-family: $Roboto-slab;
+          font-weight: 700;
+        }
+      }
+    }
+    small{
+      font-family: $Open-Sans;
+      font-weight: 300;
+      font-size: 18px;
+    }
+    .carousel-indicators {
+      right: 50%;
+      top: auto;
+      bottom: -35px;
+      margin-right: 0;
+      li{
+        display: inline-block;
+        height: 5px;
+        width: 20px;
+        margin: 1px;
+        text-indent: -999px;
+        cursor: pointer;
+        background: #d7d7d7;
+        border: 1px solid #d7d7d7;
+        border-radius: 10px;
+        &.active {
+          background: $light_blue;
+          height: 5px;
+          width: 20px;
+          margin-bottom: 1px;
+          border-radius: 10px;
+        }
+      }
+  }
+  .carousel-control.left, .carousel-control.right{
+    display: none;
+  }
+
+  }
+}
+
+.why_pledje {
+  background: #effee3;
+  position: relative;
+  padding: 60px 0px 40px;
+  border-top: 3px solid $white;
+  .head_section .heading_tag {
+    padding-right: 80px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0px;
+    color: $white;
+    font-family: $Roboto;
+    font-weight: 900;
+    font-size: 24px;
+    height: 55px;
+    line-height: 50px;
+  }
+  .why_grid_main {
+    margin-top: 50px;
+    .w_grid {
+      img {
+        width: 18%;
+        float: left;
+        margin-right: 5%;
+      }
+      min-height: 100px;
+      margin-bottom: 40px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      .why_txt {
+        float: left;
+        width: 76%;
+        h3 {
+          color: $light_green;
+          font-family: $Roboto-slab;
+          font-weight: 700;
+          margin-top: 0;
+        }
+        p {
+          color: #767676;
+          font-family: $Roboto;
+          margin-bottom: 0;
+          font-size: 19px;
+        }
+      }
+    }
+  }
+}
+
+.special_offer {
+  position: relative;
+  .spacial_img img {
+    width: 100%;
+  }
+  .head_section {
+    position: absolute;
+    top: 14%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    .heading_tag {
+      padding-right: 80px;
+      background-size: 100% 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      left: 0;
+      top: 0px;
+      color: $white;
+      font-family: $Roboto;
+      font-weight: 900;
+      font-size: 24px;
+      height: 55px;
+      line-height: 50px;
+    }
+  }
+  .special_offer_caption {
+    position: absolute;
+    top: 43%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    p {
+      color: $black;
+      font-size: 24px;
+      margin-bottom: 0;
+    }
+    .campaign_price {
+      color: $light_green;
+      font-size: 44px;
+      font-weight: 900;
+    }
+    h3 {
+      margin-top: 0;
+      font-weight: 300;
+      color: $dark_blue;
+    }
+    a.more_info_anchor {
+      background: #77af47;
+      color: $white;
+      text-transform: uppercase;
+      font-weight: 500;
+      padding: 10px 25px;
+      display: inline-block;
+      border-radius: 12px;
+      font-size: 16px;
+    }
+    .special_image{
+      display: none;
+    }
+  }
+}
+
+.case_study {
+  position: relative;
+  padding: 40px 0px 60px;
+  .head_section .heading_tag {
+    padding-left: 80px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+    top: 0px;
+    color: $white;
+    font-family: $Roboto;
+    font-weight: 900;
+    font-size: 24px;
+    height: 55px;
+    line-height: 50px;
+  }
+  .featured_grid {
+    position: relative;
+    margin-top: 60px;
+    background: #f7f9fa;
+    .featured_img {
+      position: relative;
+      > img{
+        width: 100%;
+      }
+    }
+    .featured_desc {
+      padding: 20px;
+      ul {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+        li {
+          color: $dark_grey;
+          font-size: 15px;
+          position: relative;
+          padding-left: 25px;
+          margin-bottom: 10px;
+          img {
+            position: absolute;
+            left: 0;
+            top: 0;
+          }
+        }
+      }
+    }
+    .featured_item ul.f_item_uline li {
+      height: 50px;
+      color: $white;
+      text-align: center;
+      font-family: $Roboto-slab;
+      font-weight: 700;
+      font-size: 22px;
+      line-height: 50px;
+      &:nth-child(odd) {
+        background: $light_green;
+      }
+      &:nth-child(even) {
+        background: #6baa37;
+      }
+      img {
+        max-width: 18px;
+        margin-right: 7px;
+      }
+    }
+    .featured_img .case-study-badge {
+      position: absolute;
+      bottom: -38px;
+      left: 50%;
+      transform: translateX(-50%);
+      -webkit-transform: translateX(-50%);
+      display: flex;
+      align-items: center;
+      .left, .right {
+        font-family: $Roboto-slab;
+        font-size: 16px;
+        color: $white;
+        width: 97px;
+        height: 58px;
+        display: flex;
+        padding: 15px 0;
+        justify-content: center;
+        font-weight: 700;
+      }
+      .left {
+        margin-right: -7px;
+        /* background: url("//public/images/case_left_img.png") no-repeat center left; */
+        position: relative;
+      }
+      .right {
+        margin-left: -7px;
+        /* background: url("/public/images/case_right_img.png") no-repeat center right; */
+        position: relative;
+      }
+      .center {
+        border: 5px solid $light_green;
+        border-radius: 100%;
+        background-color: $white;
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 76px;
+        width: 76px;
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+#countdown span{margin: 10px auto;width: 100%;letter-spacing: 15px;}

@@ -1,0 +1,217 @@
+@import './index.scss';
+
+$ipad_landscape: 1200px;
+$ipad_portrait: 991px;
+$iphone_landscape: 767px;
+$iphone_portrait: 480px;
+
+
+@media screen and (max-width: $ipad_landscape) {
+#header nav.navbar.navbar-inverse #myNavbar {
+    ul.nav.navbar-nav.navbar-right li {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    a.btn.btn-success.btn-round {
+        margin-top: 18px;
+        padding: 10px 15px;
+        width: 15%;
+        white-space: normal;
+    }
+}
+   
+.freedom_event_section .mybar {
+    padding: 0;
+}
+    
+.videobox .video_iframe {
+    padding: 0px;
+} 
+
+.special_offer {
+    background: #eefbff;
+    padding: 20px 0px;
+    .spacial_img {
+        display: none;
+    }
+    .special_offer_caption {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+        .special_image {
+            display: block;
+        }
+        p {
+            margin-top: 40px;
+        }
+    }
+    .head_section {
+        position: relative;
+        top: 0;
+        transform: translateY(0%);
+        -webkit-transform: translateY(0%);
+    }
+}
+
+}
+
+@media screen and (max-width: $ipad_portrait) {
+.testimonial #quote-carousel p {
+    font-size: 18px;
+    padding: 60px 15px 15px;
+    img {
+        &.left_quote, &.right_quote {
+        max-width: 85px;
+        }
+    }
+}
+    
+.why_pledje .why_grid_main .w_grid {
+    min-height: 160px;
+}
+    
+#header nav.navbar.navbar-inverse {
+    #myNavbar a.btn.btn-success.btn-round {
+        width: auto;
+    }
+    .navbar-header .menu-opener {
+        display: block;
+    }
+    #myNavbar {
+        display: none !important;
+        &.open_menu {
+            display: block !important;
+            position: absolute;
+            background: #fff;
+            top: 100%;
+            left: 0;
+            right: 0;
+        }
+        ul.nav.navbar-nav.navbar-right li {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        a.btn.btn-success.btn-round {
+            display: none;
+        }   
+    }
+    .navbar-header .navbar-brand {
+        padding: 0px 15px;
+    }
+}
+.freedom_event_section .mybar {
+    .freedom_rise_text {
+        width: 23%;
+    }
+    .countdown_timer {
+        width: 30%;
+        font-size: 18px;
+    }
+}
+
+}
+
+
+@media screen and (max-width: $iphone_landscape) {
+.special_offer {
+    .special_offer_caption .special_image {
+        margin-top: 30px;
+    }
+    .head_section .heading_tag {
+        padding-right: 0;
+        text-align: center;
+    }
+    }
+      
+    .case_study .head_section .heading_tag {
+    padding-left: 0;
+    text-align: center;
+    }
+    
+    .special_offer .special_offer_caption h3 {
+    font-size: 20px;
+    line-height: 26px;
+    }
+      
+    .why_pledje {
+    .why_grid_main .w_grid {
+        min-height: 1px;
+        .why_txt {
+        h3 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 16px;
+        }
+        }
+    }
+    .head_section .heading_tag {
+        padding-right: 0;
+        text-align: center;
+    }
+    }
+      
+    .videobox {
+    .video_iframe {
+        margin-top: 30px;
+    }
+    .video_box_header {
+        .heading_tag_left {
+        padding-right: 0;
+        text-align: center;
+        margin-bottom: 30px;
+        }
+        .heading_tag_right {
+        padding: 0px;
+        text-align: center;
+        }
+    }
+    }
+      
+    #header nav.navbar.navbar-inverse #myNavbar ul.nav.navbar-nav {
+    &.navbar-right {
+        margin-right: 0;
+        li {
+        a {
+            text-align: center;
+            display: inline-block;
+        }
+        text-align: center;
+        }
+    }
+    margin: 7.5px 0px;
+    }
+      
+    .hero_image h1 {
+    font-size: 32px;
+    }
+      
+    .freedom_event_section .mybar {
+    text-align: center;
+    padding: 15px 0px;
+    .freedom_rise_text, .countdown_timer {
+        width: 100%;
+    }
+    .raised_goal {
+        width: 100%;
+        padding: 10px 0px;
+    }
+    .view_campaigns {
+        width: 100%;
+    }
+}
+
+}
+
+
+@media screen and (max-width: $iphone_portrait) {
+.hero_image {
+    h1 {
+        font-size: 30px;
+    }
+    p {
+        font-size: 14px;
+    }
+}
+}

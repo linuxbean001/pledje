@@ -1,0 +1,31 @@
+{
+  "name": "pledje",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "nodemon ./bin/www",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "nodemon ./bin/www",
+    "dev:client": "node ./bin/start-client.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imationsoft/pledjeReact.git"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "concurrently": "^4.1.0",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.6.9",
+    "express": "~4.16.0",
+    "immutable": "^4.0.0-rc.12",
+    "morgan": "~1.9.0",
+    "nodemon": "^1.18.9",
+    "react": "^16.7.0",
+    "react-redux": "^6.0.0",
+    "react-router-dom": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-actions": "^2.6.4",
+    "redux-pender": "^2.0.9"
+  }
+}
